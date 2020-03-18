@@ -5,6 +5,7 @@ import com.bonyeon.book.springboot.web.dto.PostsUpdateRequestDto;
 import com.bonyeon.book.springboot.web.dto.PostsResponseDto;
 import com.bonyeon.book.springboot.web.dto.PostsSaveRequestDto;
 import lombok.RequiredArgsConstructor;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 @RequiredArgsConstructor
@@ -27,4 +28,7 @@ public class PostsApiController {
     public PostsResponseDto findById(@PathVariable Long id){
         return postsService.findById(id);
     }
+
+
+
 }
